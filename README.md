@@ -17,7 +17,7 @@ The project deployment history in Qase.io consists of three distinct test execut
 2. PIM functionality: Targeted smoke test suite. 9 Passed.
 3. Auth and Security: Initial security suite. 2 Passed, 1 Failed.
 
-![Qase Test Runs Dashboard](test_runs_dashboard.jpg)
+![Qase Test Runs Dashboard](Final_Test_Runs_Summary_Image.jpg)
 
 ### Tested Modules and Scope
 1.  Admin Module: CRUD operations for system users, input boundary value testing, and form validation verification (including password case sensitivity checks).
