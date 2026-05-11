@@ -1,7 +1,7 @@
 # OrangeHRM - Manual and Exploratory Testing Project
 
 ## Live Project Links
-*   Live Test Repository: [Browse Test Cases on Qase.io](ПОСТАВИ_ТВОЯ_ЛИНК_ОТ_QASE_ТУК)
+*   Live Test Repository: https://app.qase.io/project/OHRM
 
 ## Project Overview
 This repository contains a comprehensive manual testing portfolio for the OrangeHRM Open-Source demo application. Due to the complete absence of project documentation and business requirements, a Chartered Exploratory Testing and Reverse Engineering approach was applied to map the system behavior, design detailed test scenarios, and detect functional anomalies.
