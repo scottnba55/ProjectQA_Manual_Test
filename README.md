@@ -1,31 +1,84 @@
-# OrangeHRM - Manual and Exploratory Testing Project
+# OrangeHRM Manual Testing Project
 
+## Project Overview
+
+This repository contains a manual testing project for the OrangeHRM Open-Source demo application.
+
+The application was tested using exploratory and structured manual testing techniques due to the absence of formal requirements documentation.
+
+The goal of this project is to demonstrate practical QA skills including test case design, execution, and defect reporting.
 ## Live Project Links
 *   Live Test Repository: https://app.qase.io/project/OHRM
 
-## Project Overview
-This repository contains a comprehensive manual testing portfolio for the OrangeHRM Open-Source demo application. Due to the complete absence of project documentation and business requirements, a Chartered Exploratory Testing and Reverse Engineering approach was applied to map the system behavior, design detailed test scenarios, and detect functional anomalies.
+---
+
+## Application Under Test
+
+https://opensource-demo.orangehrmlive.com
+
+---
 
 ## Tools Used
-*   Qase.io: Test Case Management and Test Run Execution
-*   Jira (Atlassian): Defect Tracking and Management
 
-## Test Execution History (Test Runs)
-The project deployment history in Qase.io consists of three distinct test execution cycles:
+- Qase.io: Test Case Management and Test Execution
+- Jira: Defect Tracking
 
-1. OrangeHRM - Regression Testing (Main Campaign): 10 test cases executed. 9 Passed, 1 Failed. (90% Pass Rate).
-2. PIM functionality: Targeted smoke test suite. 9 Passed.
-3. Auth and Security: Initial security suite. 2 Passed, 1 Failed.
+---
+
+## Test Execution Summary
+
+The project includes multiple test execution cycles:
+
+- Regression Testing: 10 test cases executed (9 Passed, 1 Failed)
+- PIM Smoke Testing: 9 test cases executed (9 Passed)
+- Auth & Security Testing: 3 test cases executed (2 Passed, 1 Failed)
+
+---
+
+## Tested Modules
+
+### Admin Module
+- User management (CRUD operations)
+- Form validation
+- Input boundary testing
+- Password validation checks
+
+### Leave Module
+- Filter functionality
+- Leave calculation logic
+- Approval workflow (Approve / Reject / Cancel)
+
+---
+
+## Bug Report (Sample)
+
+### Bug ID: D-3 (Qase) / Jira Linked Issue
+
+**Title:** UI inconsistency in "Show Leave with Status" dropdown after reset
+
+**Severity:** Major
+
+**Expected Result:**
+The dropdown and filter tag should be consistent. After reset, both should return to default state or reflect the same value.
+
+**Actual Result:**
+The dropdown shows "-- Select --", but the "Pending Approval" filter tag remains active below it, causing UI inconsistency.
+
+**Impact:**
+This creates confusion because the UI state does not match the active filter state.
+
+---
+
+## Summary
+
+This project demonstrates manual QA testing skills including:
+
+- Test case design and execution
+- Exploratory testing techniques
+- Defect identification and reporting
+- Use of test management tools (Qase) and issue tracking (Jira)
+
+It reflects practical experience with structured QA workflows on a real demo application.
 
 ![Qase Test Runs Dashboard](Final_Test_Runs_Summary_Image.png)
 
-### Tested Modules and Scope
-1.  Admin Module: CRUD operations for system users, input boundary value testing, and form validation verification (including password case sensitivity checks).
-2.  Leave/Time Module: Verification of multi-attribute filter rules, weekend time computation logic, leave entitlement updates, and workflow authorization actions (Approve/Reject/Cancel).
-
-## Highlighted Defect Report (Sample Bug)
-ID: D-3 (Qase) / Linked to Jira Issue Tracker
-*   Summary: UI Inconsistency: 'Show Leave with Status' dropdown displays '-- Select --' but activates 'Pending Approval' tag after Reset.
-*   Severity: Major (Blocks logical form reset state)
-*   **Expected Result:** The UI state must be consistent. Either the dropdown should explicitly display "Pending Approval" to match the active tag, or the filter tag should remain completely empty until a user action triggers it.
-*   **Actual Result:** The dropdown element resets to display "-- Select --", but the system automatically populates and activates the "Pending Approval" filter tag right below it. This creates a visual inconsistency for the user.
